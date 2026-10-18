@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI Campus，每天几分钟，把 AI 真正用起来。">
+  <title>AI Campus · 每天学会一点</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="welcome.css">
+  <link rel="stylesheet" href="packages.css">
+  <link rel="stylesheet" href="lesson.css">
+  <link rel="stylesheet" href="feedback.css">
+  <link rel="stylesheet" href="apply.css">
+  <link rel="stylesheet" href="academy.css">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#welcome" aria-label="AI Campus 首页"><span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M5 25V14M11 25V10M17 25V5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M23 8v8m-4-4h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>AI Campus</a>
+    <nav aria-label="主导航">
+      <a href="#campus" data-nav="campus">我的校园</a>
+      <a href="#learn" data-nav="learn">提问练习</a>
+    </nav>
+    <span class="edition">一点点，也在进步。</span>
+  </header>
+
+  <main id="welcome" class="view welcome">
+    <section class="hero hero-centered">
+      <div class="morning-light" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">STAY CURIOUS. KEEP GROWING.</p>
+        <h1>每天学会一点。</h1>
+        <p class="hero-statement">让好奇，成为你的下一步。</p>
+        <p class="intro">从大学生活里的一个小问题出发，<br>把每一次尝试，变成真正属于你的能力。</p>
+        <a class="button primary" href="#campus">开始今天的练习 <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <p class="subnote">免费体验 · 无需注册 · 按自己的节奏来</p>
+      </div>
+      <div class="thought">
+        <span class="thought-line" aria-hidden="true"></span>
+        <p id="thought-text">你不必准备好一切，才开始。</p>
+        <button id="thought-toggle" type="button" aria-label="暂停文案轮换" title="暂停文案轮换"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 4v8M11 4v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+      </div>
+    </section>
+    <section class="steps" aria-label="学习方式">
+      <div class="steps-title"><span class="overline">HOW IT WORKS</span><h2>三小步，把「不会」变成「我试试」。</h2></div>
+      <div><span class="step-number">01</span><h3>找一找 <small>Learn</small></h3><p>看两个例子，发现一个小窍门。</p></div>
+      <div><span class="step-number">02</span><h3>补一补 <small>Practice</small></h3><p>跟着提示，让你的问题更清楚。</p></div>
+      <div><span class="step-number">03</span><h3>试一试 <small>Apply</small></h3><p>换个真实场景，自己动手一次。</p></div>
+    </section>
+    <footer>AI Campus <span>每次学一点，逐步完成一件事。</span><span>从这里开始，就很好。</span></footer>
+  </main>
+
+  <main id="campus" class="view campus" hidden>
+    <div class="learning-storage"><p id="storage-status" role="status">学习记录保存在当前浏览器，不跨设备同步。</p><button id="open-reset-records" type="button" aria-haspopup="dialog">清除学习记录</button></div>
+    <section class="campus-heading"><div><p class="eyebrow">YOUR LITTLE CAMPUS</p><h1>今天，想学会点什么？</h1><p class="muted">留几分钟给好奇心。你的第一步，从这里开始。</p></div><div class="date-note">不必一次学完<br><span>按自己的节奏就好</span></div></section>
+    <section class="campus-layout">
+      <article class="today">
+        <div class="section-label"><span><i></i> 今天的练习</span><span>约 3–5 分钟</span></div>
+        <div class="today-main"><div class="task-symbol" aria-hidden="true">↗</div><p class="overline">PROMPT LAB · 第 1 节</p><h2>让 AI 听懂<br>你的要求。</h2><p>学会把一句模糊的想法，<br>变成一个清楚、具体的提问。</p><a class="button primary" href="#learn">开始第一关 <span aria-hidden="true">→</span></a></div>
+        <div class="task-progress"><span><b>1</b> 找一找</span><span><b>2</b> 补一补</span><span><b>3</b> 试一试</span></div>
+      </article>
+      <aside class="growth"><h2>一点一滴的成长 <span aria-hidden="true">✳</span></h2><div class="growth-stats"><div><strong>0<small>天</small></strong><span>连续学习</span></div><div><strong>0<small>XP</small></strong><span>学习经验</span></div></div><div class="line"></div><p class="overline">你的第一枚纪念</p><div class="medal" aria-hidden="true">✦</div><h3>初次提问</h3><p>完成今天的三关，<br>记下你迈出的第一步。</p><div class="empty-progress"><span></span></div><p class="progress-note">已完成 0 / 3 关</p></aside>
+    </section>
+    <section class="task-library" aria-labelledby="library-title">
+      <div class="library-heading"><div><p class="overline">FIND YOUR NEXT STEP</p><h2 id="library-title">从你想完成的事开始。</h2><p>探索任务包，选一个现在用得上的小目标。</p></div><span class="library-caption">探索任务包</span></div>
+      <div class="package-row">
+        <span class="package-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 5h14v11H9l-4 4V5Z"/><path d="M9 9h6M9 12h4"/></svg></span>
+        <div class="package-copy"><h3>AI 提问入门 <span class="package-status free">免费体验</span></h3><p>把模糊的想法，变成清楚、具体的提问。</p><span class="package-meta">第 1 节 · 3 关练习 · 约 3–5 分钟</span></div>
+        <a class="package-action" href="#learn">开始体验 <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="package-row">
+        <span class="package-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v11H4zM12 16v4m-4 0h8M8 12l3-3 3 2 3-4"/></svg></span>
+        <div class="package-copy"><h3>如何使用 GPT <span class="package-status free">免费学习</span></h3><p>学会继续追问、检查回答，把对话变成自己的助力。</p><span class="package-meta">第 2 节 · 3 个小任务 · 约 5 分钟</span></div>
+        <a class="package-action" href="#gpt" id="gpt-campus-action">开始第二节 <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="package-row">
+        <span class="package-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 6C9 4 6 4 3 5v14c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1Zm0 0v14M6 9l3 1m-3 3 3 1m6-4 3-1m-3 5 3-1"/></svg></span>
+        <div class="package-copy"><h3><a href="#jianying">如何使用剪映</a> <span class="package-status" id="jianying-status">29 体验币解锁</span></h3><p>从认识时间线到完成短片，一节一节学会剪辑。</p><span class="package-meta">8 节学习路线 · 前 2 节可练习 · <a href="#jianying" class="outline-link">查看目录</a></span></div>
+        <button class="package-action" type="button" id="jianying-campus-action" data-buy-jianying aria-haspopup="dialog">付费学习 <span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="campus-wallet"><p><span>校园体验金</span><strong><span data-wallet-balance>100</span> <small>体验币</small></strong></p><span>已赠送 100 体验币，用于体验任务包解锁。仅限演示，不涉及真实支付。</span></div>
+      <p class="library-note">选择想学的任务，按自己的节奏继续。剪映前两节已开放，其余小节正在准备中。</p>
+    </section>
+    <footer>AI Campus <span>学习中断也没关系，回来继续。</span></footer>
+  </main>
+
+  <main id="learn" class="view learn" hidden>
+    <div class="lesson-toolbar"><a href="#campus">← 返回校园</a><span>AI 提问入门 · 第 1 节</span><span>01 / 03</span></div>
+    <ol class="lesson-steps" aria-label="学习进度"><li aria-current="step"><b>1</b> 找一找 <small>Learn</small></li><li><b>2</b> 补一补 <small>Practice</small></li><li><b>3</b> 试一试 <small>Apply</small></li></ol>
+    <section class="lesson-content"><p class="eyebrow">先观察一下</p><h1>同一件事，<br>怎样问更清楚？</h1><p class="muted">不急着记公式。先看看，这两个提问有什么不同。</p>
+      <div class="comparison"><article><div class="prompt-label"><span>A</span> 一个简单的提问</div><p>帮我总结这篇文章。</p></article><article class="specific"><div class="prompt-label"><span>B</span> 多一点具体的要求</div><p>请用大学新生能理解的语言，把这篇文章总结成 <mark>3 个核心观点</mark>，每个观点 <mark>不超过 50 字</mark>，并给出一个现实案例。</p></article></div>
+      <form id="learn-question" class="question-form">
+        <fieldset><legend>B 比 A 多提供了哪些有用的信息？</legend><p class="question-help" id="question-help">选择最合适的一项，再检查答案。</p>
+          <label class="answer-option"><input type="radio" name="learn-answer" value="length" aria-describedby="question-help"><span>字数更多，所以回答一定更准确。</span></label>
+          <label class="answer-option"><input type="radio" name="learn-answer" value="specific" aria-describedby="question-help"><span>读者背景、输出结构和长度要求。</span></label>
+          <label class="answer-option"><input type="radio" name="learn-answer" value="formal" aria-describedby="question-help"><span>语气更正式，AI 就能更好地理解。</span></label>
+        </fieldset>
+        <div id="learn-feedback" class="learn-feedback" role="status" aria-live="polite" hidden><strong id="learn-feedback-title"></strong><p id="learn-feedback-body"></p></div>
+        <div class="question-actions"><button class="button primary" id="check-answer" type="submit">检查答案 <span aria-hidden="true">→</span></button><a class="button lesson-return" href="#practice" id="lesson-complete" hidden>继续第二关 <span aria-hidden="true">→</span></a><span id="learn-reward" class="reward-note" hidden>第 1 关完成 · +1 XP</span></div>
+      </form>
+      <p class="lesson-footnote">清楚的提问让输出更容易检查，涉及事实的信息仍需要核实。</p>
+    </section>
+  </main>
+  <main id="practice" class="view learn" hidden>
+    <div class="lesson-toolbar"><a href="#learn">← 回顾第一关</a><span>AI 提问入门 · 第 1 节</span><span>02 / 03</span></div>
+    <ol class="lesson-steps" aria-label="学习进度"><li><b>1</b> 找一找 <small>Learn</small></li><li aria-current="step"><b>2</b> 补一补 <small>Practice</small></li><li><b>3</b> 试一试 <small>Apply</small></li></ol>
+    <section class="lesson-content practice-content"><p class="eyebrow">轮到你动手了</p><h1>给一个模糊的想法，<br>补上具体的要求。</h1><p class="muted">从「帮我写一个演讲稿」开始，试着说清楚你需要什么。</p>
+      <div class="practice-layout">
+        <form id="practice-form" novalidate>
+          <p class="practice-originality" id="practice-originality">请用自己的话填写，不要照抄输入框中的示例。可以换一个主题、听众或使用场景。</p>
+          <div class="practice-field"><label for="prompt-audience">01 <span>你是谁，要讲给谁听？</span></label><input id="prompt-audience" name="audience" placeholder="例如：我是大学生，听众是同班同学" maxlength="200" aria-describedby="audience-error"><p id="audience-error" class="field-error" hidden></p></div>
+          <div class="practice-field"><label for="prompt-task">02 <span>主题是什么，想让 AI 做什么？</span></label><input id="prompt-task" name="task" placeholder="例如：为新能源汽车发展写一份演讲稿" maxlength="200" aria-describedby="task-error"><p id="task-error" class="field-error" hidden></p></div>
+          <div class="practice-field"><label for="prompt-context">03 <span>在什么场景使用？</span></label><input id="prompt-context" name="context" placeholder="例如：下周的课堂展示，演讲 3 分钟" maxlength="200" aria-describedby="context-error"><p id="context-error" class="field-error" hidden></p></div>
+          <div class="practice-field"><label for="prompt-format">04 <span>希望答案按什么结构呈现？</span></label><input id="prompt-format" name="format" placeholder="例如：开场白、3 个核心观点、结尾" maxlength="200" aria-describedby="format-error"><p id="format-error" class="field-error" hidden></p></div>
+          <div class="practice-field"><label for="prompt-limits">05 <span>还有哪些限制或要求？</span></label><textarea id="prompt-limits" name="limits" rows="3" placeholder="例如：500 字以内，适合口述；不确定的数据标出待核实" maxlength="400" aria-describedby="limits-error"></textarea><p id="limits-error" class="field-error" hidden></p></div>
+          <details class="practice-hint"><summary>需要一点提示？</summary><p>先想象一次真实的课堂展示：听众听得懂吗？你能在规定时间内讲完吗？输出拿到手后，能直接练习吗？不必照抄示例，按自己的任务填写。</p></details>
+          <button class="button primary" type="submit">检查我的提问 <span aria-hidden="true">→</span></button>
+        </form>
+        <aside class="prompt-preview" aria-labelledby="prompt-preview-title"><p class="overline">YOUR PROMPT</p><h2 id="prompt-preview-title">你的想法，正在变清楚。</h2><p id="assembled-prompt" class="assembled-prompt">帮我写一个演讲稿。</p><div class="preview-bottom"><span id="practice-field-count">已补充 0 / 5 项</span><span>随输入更新</span></div></aside>
+      </div>
+      <div id="practice-feedback" class="learn-feedback" role="status" aria-live="polite" hidden><strong id="practice-feedback-title"></strong><p id="practice-feedback-body"></p></div>
+      <div class="question-actions" id="practice-completion" hidden><a class="button lesson-return" href="#apply">继续第三关 <span aria-hidden="true">→</span></a><span class="reward-note">第 2 关完成 · +1 XP</span></div>
+      <p class="lesson-footnote">练习反馈（规则演示）：检查信息是否填写完整，不代表 AI 已评估内容质量。</p>
+    </section>
+  </main>
+  <main id="apply" class="view learn" hidden>
+    <div class="lesson-toolbar"><a href="#practice">← 回顾第二关</a><span>AI 提问入门 · 第 1 节</span><span>03 / 03</span></div>
+    <ol class="lesson-steps" aria-label="学习进度"><li><b>1</b> 找一找 <small>Learn</small></li><li><b>2</b> 补一补 <small>Practice</small></li><li aria-current="step"><b>3</b> 试一试 <small>Apply</small></li></ol>
+    <section class="lesson-content"><p class="eyebrow">把方法带到新场景里</p><h1>这一次，<br>试着自己问清楚。</h1><p class="muted">没有填空框了。把你刚才学到的，用在一次真实的复习需求里。</p>
+      <div class="apply-scenario"><p class="overline">你的任务 · 期末复习</p><p>下周要考试，老师给了一份 <strong>80 页课程 PDF</strong>。你每天只有 <strong>30 分钟</strong>复习。假设你会把这份资料提供给 AI，你会怎样请它帮忙？</p><span>本练习不上传或读取 PDF，只练习如何表达需求。</span></div>
+      <form id="apply-form" novalidate><label for="apply-prompt">写下你的提问</label><p class="question-help" id="apply-help">请独立表达，不要照抄前两关的示例。想想你的目标、资料背景和输出要求。</p><textarea id="apply-prompt" rows="7" maxlength="3000" placeholder="从你真实想复习的一门课出发……" aria-describedby="apply-help apply-error"></textarea><div class="apply-input-bottom"><span id="apply-error" class="field-error" hidden></span><span id="apply-count">0 / 3000</span></div><button class="button primary" type="submit">看看我的提问 <span aria-hidden="true">→</span></button></form>
+      <section id="apply-review" class="apply-review" aria-labelledby="apply-review-title" hidden><p class="overline">练习反馈 · 规则演示</p><h2 id="apply-review-title" tabindex="-1">让你的要求，再清楚一点。</h2><p id="apply-summary" role="status" aria-live="polite"></p><ul id="apply-dimensions"></ul><p class="review-limit">以下反馈按文字线索检查，不等于模型评阅，也不能判断复习内容是否准确。你可以继续修改，再次检查。</p><button id="finish-apply" type="button" class="button primary">带着这份反馈，完成练习 <span aria-hidden="true">→</span></button></section>
+      <p class="lesson-footnote">不用追求一次写完美。知道下一步怎样改，也是在进步。</p>
+    </section>
+  </main>
+  <main id="result" class="view result-view" hidden>
+    <section class="result-content"><p class="eyebrow">ONE SMALL STEP FOR YOU</p><div class="result-medal" aria-hidden="true">✦</div><h1 id="result-title">把今天的进步，收好。</h1><p id="result-description" class="muted"></p><div class="result-stats"><div><strong id="result-completed">0 / 3</strong><span>完成关卡</span></div><div><strong id="result-xp">0 XP</strong><span>本节经验</span></div></div><div id="result-badge" class="result-badge" hidden><strong>初次提问</strong><p>第 1 节纪念 · 你完成了从观察到独立尝试的三小步。</p></div><section class="result-prompt"><h2>你写下的提问</h2><p id="result-prompt-text"></p><button id="copy-result" type="button">复制提问</button><span id="copy-result-status" role="status"></span></section>
+<section class="result-prompt reference-answer" aria-labelledby="reference-answer-title">
+  <div class="reference-heading"><h2 id="reference-answer-title">参考答案</h2><span>一种写法，供你对照</span></div>
+  <p class="reference-intro">清楚的提问可以有很多种表达。看看下面这份提问补充了哪些信息。</p>
+  <p id="reference-prompt-text">我下周要参加课程考试，会提供老师的 80 页课程 PDF。我每天可以复习 30 分钟，请只依据这份资料，帮我制定考前 7 天的复习计划。
+
+请先按章节整理核心知识点和容易混淆的概念，再用表格列出每天的复习主题、对应页码、时间分配和 2 道自测题，将自测题答案放在最后。
+
+如果资料不足以判断考试重点，请明确说明，不要自行推测老师的考查范围。无法确认的信息请标为“待核实”；如果你无法读取 PDF，请先告诉我，不要编造内容。</p>
+  <div class="reference-reasons"><h3>可以对照的四个地方</h3><ul><li><strong>目标：</strong>准备课程考试，制定复习计划。</li><li><strong>背景：</strong>老师提供的 80 页 PDF。</li><li><strong>格式：</strong>章节梳理、计划表格和自测题。</li><li><strong>限制：</strong>7 天、每天 30 分钟，只依据材料，标明不确定信息。</li></ul></div>
+  <p class="reference-tip">换成你的课程、考试日期和可用时间，再检查计划是否适合自己。</p>
+  <button id="copy-reference" type="button">复制参考提问</button><span id="copy-reference-status" role="status"></span>
+</section><p class="result-reminder">提问清楚了，也记得检查 AI 的回答和资料来源。</p><div class="result-actions"><a class="button primary" href="#campus">回到我的校园 <span aria-hidden="true">→</span></a><a href="#apply">再改一改我的提问</a></div><p class="lesson-footnote">当前进度仅保留在本次打开的页面中，刷新后会重置。</p></section>
+  </main>
+  <main id="gpt" class="view academy-catalog" hidden><div id="gpt-catalog"></div></main>
+  <main id="jianying" class="view academy-catalog" hidden><div id="jianying-catalog"></div></main>
+  <main id="course-lesson" class="view learn" hidden>
+    <div class="lesson-toolbar"><a id="academy-back" href="#campus">← 返回目录</a><span id="academy-label"></span><span id="academy-count"></span></div>
+    <section class="lesson-content academy-question"><p class="eyebrow" id="academy-step"></p><h1 id="academy-title">准备开始新的练习。</h1><p class="muted" id="academy-context"></p><form id="academy-form" novalidate><div id="academy-inputs"></div><p id="academy-save-note" class="academy-save-note" role="status"></p><div id="academy-feedback" class="learn-feedback" role="status" aria-live="polite" hidden></div><div class="question-actions"><button class="button primary" id="academy-check" type="submit">检查答案 <span aria-hidden="true">→</span></button><button class="button primary" id="academy-next" type="button" hidden>下一步 <span aria-hidden="true">→</span></button></div></form><p class="lesson-footnote" id="academy-source"></p></section>
+  </main>
+  <main id="course-result" class="view result-view" hidden><section class="result-content"><p class="eyebrow">KEEP GROWING</p><h1 id="academy-result-title">新的一小步，完成了。</h1><p class="muted" id="academy-result-description"></p><div class="result-stats"><div><strong id="academy-result-count"></strong><span>本节已完成</span></div><div><strong id="academy-result-xp"></strong><span>本节经验</span></div></div><section class="result-prompt"><h2>你的独立尝试</h2><p id="academy-final-answer"></p><h2>参考答案</h2><p id="academy-reference-answer"></p><p class="reference-tip">这是一种表达，实际操作时请结合自己的任务调整。</p></section><div class="result-actions"><a class="button primary" href="#campus">回到我的校园</a><a id="academy-result-back" href="#gpt">返回学习目录</a></div></section></main>
+  <dialog id="academy-pay-dialog" aria-labelledby="academy-pay-title" aria-describedby="academy-pay-description"><div class="package-dialog-top"><span class="overline">CAMPUS EXPERIENCE</span><button id="academy-close-pay" type="button" aria-label="关闭支付弹窗">×</button></div><h2 id="academy-pay-title">解锁「如何使用剪映」</h2><p id="academy-pay-description">本次为模拟支付，仅使用赠送的校园体验币，不会产生真实扣款。</p><div class="pay-breakdown"><div><span>任务包体验价</span><strong>29 体验币</strong></div><div><span>可用余额</span><strong><span data-wallet-balance>100</span> 体验币</strong></div></div><p class="dialog-note">含 8 节目录。目前可学习前 2 节共 6 个小任务，其余 6 节仅为目录，内容筹备中。</p><p id="academy-pay-message" role="status" aria-live="polite"></p><button id="academy-confirm-pay" class="button primary" type="button">支付 29 体验币并解锁</button><a href="#jianying" id="academy-enter-paid" class="button primary" hidden>进入任务包</a></dialog>
+  <dialog id="reset-records-dialog" aria-labelledby="reset-records-title" aria-describedby="reset-records-description"><h2 id="reset-records-title">重新开始这段练习？</h2><p id="reset-records-description">将清除这个浏览器里保存的全部关卡进度、输入内容、经验、本节纪念及模拟支付记录，体验金会恢复为初始额度。清除后无法恢复。</p><form method="dialog" class="reset-actions"><button class="button" type="submit">保留记录</button><button class="button primary" id="confirm-reset-records" type="button">清除并重新开始</button></form><p id="reset-records-error" role="status"></p></dialog>
+<script src="app.js"></script>
+  <script src="feedback.js"></script>
+  <script src="storage.js"></script>
+  <script src="curriculum.js"></script>
+  <script src="academy-state.js"></script>
+  <script src="lesson.js"></script>
+  <script src="academy.js"></script>
+</body>
+</html>
+
+
